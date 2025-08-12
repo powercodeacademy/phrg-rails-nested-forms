@@ -1,20 +1,15 @@
-class Pirate
-  # TODO: Implement the Pirate class
-  # This class should have the following attributes:
-  # - name (string)
-  # - weight (string)
-  # - height (string)
+class Pirate < ApplicationRecord
+  # TODO: Set up associations with ships
+  # Use has_many to associate pirates with ships
+  # Example: has_many :ships
 
-  # TODO: Add attr_accessor for name, weight, and height
+  # TODO: Set up nested attributes for ships
+  # Use accepts_nested_attributes_for to allow creating ships through pirate forms
+  # Example: accepts_nested_attributes_for :ships
 
-  # TODO: Add an initialize method that accepts these attributes
+  # TODO: Add validations if needed
+  # Example: validates :name, presence: true
 
-  # TODO: Add a class variable to store all pirate instances
-
-  # TODO: Add a class method .all that returns all pirates
-
-  # TODO: Add logic to store each new pirate instance when created
-
-  # Note: This lab doesn't use a database, so you'll manage data in memory
-  # similar to how it was done in the Sinatra version
+  # NOTE: This lab uses ActiveRecord, so pirates will be persisted to the database
+  # The database table should have columns: name, weight, height
 end
