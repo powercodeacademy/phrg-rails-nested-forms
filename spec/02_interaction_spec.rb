@@ -1,4 +1,6 @@
-context "Filling in the Form" do
+require 'rails_helper'
+
+RSpec.describe "Filling in the Form", type: :feature do
   before do
     visit "/new"
   end
